@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  scraper:
+    build: .
+    volumes:
+      - ./data:/tmp/data
+      - .:/usr/src/app
+      # - ./unims-events:/usr/src/app/unims-events
+      # - ./profile:/root/.ipython/profile_default
